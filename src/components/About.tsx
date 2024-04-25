@@ -16,9 +16,9 @@ const About = () => {
     const MotionButton = motion(Button);
 
     return(
-        <section className={`w-[100vw] h-[100vh] ${styles.flexCenter}`}>
+        <section className={`h-[100vh] ${styles.flexCenter}`}>
             <h1 className="font-bannerFont text-9xl text-myColorGreen">{bannerStringEffect}</h1>
-            <div className="fixed">
+            <div className="absolute">
                 <MotionButton 
                     initial={{y:400, opacity: 0}}
                     animate={{y: displayButton ? 200 : 400, opacity: displayButton ? 1 : 0}}

@@ -11,6 +11,8 @@ export default {
       'myColorGreen': '#2DD881',
       'myColorPurple': '#6247AA',
       'myColorGray': '#D2D5DD',
+      'black': '#000000',
+      'white': '#ffffff',
     },
     fontFamily: {
       'navFont': '"Retro Team"',
