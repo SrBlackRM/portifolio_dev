@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { styles } from "../styles";
 
 const About = () => {
-    const [bannerStringEffect, setBannerStringEffect] = useState("")
+    const [bannerStringEffect, setBannerStringEffect] = useState<string>("")
 
-    const textEffectTyping = (text: string, time: number) => {
+    const textEffectTyping = (text: string, time: number): void => {
         /* Time in seconds */
         time = time * 1000;
-        const textArray = text.split('');
+        const textArray: Array<string> = text.split('');
     
-        let newString = "";
+        let newString: string = "";
 
         setInterval(()=>{
             if(textArray.length === 0){
