@@ -578,6 +578,10 @@ video {
   z-index: 10;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -626,6 +630,10 @@ video {
   gap: 2rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -648,6 +656,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .font-bannerFont {
