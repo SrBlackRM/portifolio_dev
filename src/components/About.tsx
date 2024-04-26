@@ -23,8 +23,8 @@ const About = () => {
             <div className="absolute">
                 <motion.img alt="Michel R Mota" src={avatarprofile} className="rounded-full"
                     initial={{opacity:0, y:-300, width: 0, height: 0}}
-                    animate={{opacity:displayPosTextPresentation ? 1:0, y: -140 , width: 240, height: 240}}
-                    transition={{type: "tween"}}
+                    animate={{opacity:displayPosTextPresentation ? 1:0, y: displayPosTextPresentation ? -140 : -300, width: 240, height: 240}}
+                    transition={{type: "spring"}}
                 />
             </div>
             <div className="absolute">
