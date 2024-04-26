@@ -40,7 +40,7 @@ export default function Navbar(): ReactElement{
             <motion.div className={styles.flexCenter}
                 initial={{opacity: 1}}
                 animate={{opacity: shrinkNav? 0: 1, x: [-20, 20]}}
-                transition={{duration: 1}}
+                transition={{duration: 0.3}}
             >
                 <ul className="flex gap-8 text-2xl font-navFont uppercase"                >
                     <NavLink to={'/home'} className="hover:text-myColorGreen">Home</NavLink>
