@@ -43,9 +43,9 @@ export default function Navbar(): ReactElement{
                 transition={{duration: 0.3}}
             >
                 <ul className="flex gap-8 text-2xl font-navFont uppercase"                >
-                    <NavLink to={'/home'} className="hover:text-myColorGreen">Home</NavLink>
-                    <NavLink to={'/projects'} className="hover:text-myColorGreen">Projects</NavLink>
-                    <NavLink to={'/digital-arts'} className="hover:text-myColorGreen">Digital Arts</NavLink>
+                    <NavLink to={'/home'} className="hover:text-myColorGreen">Inicio</NavLink>
+                    <NavLink to={'/projects'} className="hover:text-myColorGreen">Projetos</NavLink>
+                    <NavLink to={'/digital-arts'} className="hover:text-myColorGreen">Sobre</NavLink>
                 </ul>
             </motion.div>
         </motion.nav>

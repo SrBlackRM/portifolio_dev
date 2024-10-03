@@ -10,7 +10,7 @@ const About = () => {
     const [displayPosTextPresentation, setDisplayPosTextPresentation] = useState<boolean>(false);
 
     useEffect(()=>{
-        TextTypingEffect(["Hello World!","My name is Michel","And I'm a","Frontend Developer"], 0.1, setBannerStringEffect)
+        TextTypingEffect(["Meu nome e Michel","E eu sou","Desenvolvedor Web"], 0.1, setBannerStringEffect)
         .then(()=>{setDisplayPosTextPresentation(true)});
     },[window]);
 
