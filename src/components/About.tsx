@@ -1,57 +1,36 @@
-import { useEffect, useState } from "react";
-import { styles } from "../styles";
-import { TextTypingEffect } from "./effects";
-import { motion } from "framer-motion";
-import { Button } from "@mui/material";
-import { avatarprofile } from "../assets";
+import { ReactElement } from "react";
+import SectionsFormat from "./SectionsFormat";
+import SocialMedia from "./SocialMedia";
 
-const About = () => {
-    const [bannerStringEffect, setBannerStringEffect] = useState<string>("");
-    const [displayPosTextPresentation, setDisplayPosTextPresentation] = useState<boolean>(false);
 
-    useEffect(()=>{
-        TextTypingEffect(["Meu nome e Michel","E eu sou","Desenvolvedor Web"], 0.1, setBannerStringEffect)
-        .then(()=>{setDisplayPosTextPresentation(true)});
-    },[window]);
+export default function About(): ReactElement{
 
-    const MotionButton = motion(Button);
-    // const MotionAvatar = motion(Avatar);
-   
+    let highlightStyle = {
+        color: 'blue',
+        fontSize: '20px',
+
+    }
+
+    let cardStyle = {
+        border: '1px solid',
+        borderRadius: '5px',
+        width: '70vw',
+        height: '60%'
+    }
+    
     return(
-        <section className={`h-[100vh] ${styles.flexCenter}`}>
-            <h1 className="font-bannerFont text-9xl text-myColorGreen mt-40">{bannerStringEffect}</h1>
-            <div className="absolute">
-                <motion.img alt="Michel R Mota" src={avatarprofile} className="rounded-full"
-                    initial={{opacity:0, y:-300, width: 0, height: 0}}
-                    animate={{opacity:displayPosTextPresentation ? 1:0, y: displayPosTextPresentation ? -140 : -300, width: 240, height: 240}}
-                    transition={{type: "spring"}}
-                />
+        <SectionsFormat color="white" className="flex-col">
+            <div style={cardStyle} className="flex">
+                <div className="flex-col">
+                    <h2 style={highlightStyle}>Quem sou</h2>
+                    <h1>Michel R Mota</h1>
+                    <h2>Engenheiro de Computação & Designer Frontend</h2>
+                </div>
+                <SocialMedia />
             </div>
-            <div className="absolute">
-                <MotionButton 
-                    initial={{y:400, opacity: 0}}
-                    animate={{y: 250, opacity: displayPosTextPresentation ? 1 : 0}}
-                    transition={{type: "spring"}}
-                    variant="outlined"
-                    sx={{
-                        width: '200px',
-                        backgroundColor: '#7CC6FE',
-                        color: 'black',
-                        fontWeight: 600,
-                        borderRadius: '3rem',
-                        padding: '0.7rem 0',
-                        '&:hover': {color: '#7CC6FE'},           
-                    }}
-                >CONTACT</MotionButton>
-            </div>
-            
-        </section>
-    )    
+        </SectionsFormat>
+    )
 }
-
-export default About;
-
-
 
 
 // const StyledButton = styled(Button)`
@@ -62,7 +41,6 @@ export default About;
 //     border-radius: 3rem !important;
 //     padding: 0.7rem 0 !important;
 //     z-index: 0 !important;
-
 //     &:hover{
 //         background-color: black !important;
 //         color: white !important;

@@ -1,11 +1,11 @@
 import { ReactElement } from "react"
-import { styles } from "../styles"
+import SectionsFormat from "./SectionsFormat"
 
 const Stacks = ():ReactElement => {
     return(
-        <section className={`h-[100vh] ${styles.flexCenter} bg-white text-black`}>
+        <SectionsFormat>
             <h1> Testando !</h1>
-        </section>
+        </SectionsFormat>
     )
 }
 
