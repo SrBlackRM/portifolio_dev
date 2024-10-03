@@ -8,7 +8,7 @@ export default {
     colors: {
       'myColorNight': '#0A0F0D',
       'myColorBlue': '#7CC6FE',
-      'myColorGreen': '#2DD881',
+      'myColorGreen': '#54ffc6',
       'myColorPurple': '#6247AA',
       'myColorGray': '#D2D5DD',
       'black': '#000000',

@@ -1,6 +1,8 @@
 import logotext from "./logo/DevMichelRMota.png";
 import avatarprofile from "./images/Foto_Perfil_editada2_insta.jpg";
 
+// OTHER IMAGES
+import developerImg from './images/developer.png'
 
 
 // SOCIAL MEDIA
@@ -19,6 +21,8 @@ export {
     avatarprofile,
     instalogo,
     whatslogo,
+
+    developerImg,
 
 
     instalink,

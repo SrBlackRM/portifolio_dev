@@ -3,7 +3,7 @@ import SectionsFormat from "./SectionsFormat"
 
 const Stacks = ():ReactElement => {
     return(
-        <SectionsFormat>
+        <SectionsFormat color="white">
             <h1> Testando !</h1>
         </SectionsFormat>
     )

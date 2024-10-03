@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { TextTypingEffect } from "./effects";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
-import { avatarprofile } from "../assets";
+import { avatarprofile, whatslink } from "../assets";
 import SectionsFormat from "./SectionsFormat";
 
 export default function Presentation(): ReactElement{
@@ -43,7 +43,7 @@ export default function Presentation(): ReactElement{
                         padding: '0.7rem 0',
                         '&:hover': {color: '#7CC6FE'},           
                     }}
-                >CONTACT</MotionButton>
+                onClick={()=>{window.open(whatslink, '_blank')}}>CONTATO</MotionButton>
             </div>
             
         </SectionsFormat>
